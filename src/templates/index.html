@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodList App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/FoodList-Icon.jpg" type="image/x-icon">
+    <!-- Logo From Logo Maker
+    https://spark.adobe.com/express-apps/logomaker/preview
+    -->
+</head>
+<body>
+    <a href="#maincontent" tabindex="1"class="skip-link">Menuju ke konten</a>
+    <header class="header">
+        <div class="header__inner">
+            <img src="images/FoodList-logos-Crop.jpeg" alt="FoodList-logos">
+            <p class="">
+                Food & Beverages Here !
+            </p>
+        </div>
+        <nav id="drawer" class="nav">
+            <ul class="nav__list">
+                <li class="nav__item" >
+                    <a tabindex="3" href="index.html">Home</a>
+                </li>
+                <li class="nav__item" >
+                    <a tabindex="4" href="#">Favorite</a>
+                </li>
+                <li class="nav__item" >
+                    <a tabindex="5"href="https://github.com/almuhtadiaqil">About us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <button id="hamburger" aria-label="Menu" tabindex="2">☰</button>
+    <main id="maincontent">
+        <div class="hero">
+            <div class="hero__inner">
+                <h1 class="hero__title">Find Any Food & Beverages Restaurant</h1>
+                <p class="hero__tagline">The Best Restaurant For You</p>
+            </div>
+        </div>
+        <section class="content">
+            <div class="catalouge">
+                <h1 class="catalouge__label">Restaurant Catalouge</h1>
+                <post-list></post-list>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <p class="copyright">Copyright &copy; 2021 - FoodList Apps</p>
+    </footer>
+</body>
+</html>
