@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 body, html{
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    font-family: 'Dancing Script', cursive;
-}
+    font-family: 'Merriweather', serif;}
 *{
     padding: 0;
     margin: 0;
@@ -28,29 +28,24 @@ body, html{
 .header{
     min-height: 56px;
     width: 100%;
-    background: #5E879D;
+    background: white;
     transition: min-height 0.3s;
     z-index: 1;
+    display: grid;
+    grid-template-columns: 0.25fr 1fr;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
     
 }
 
 .header__inner {
     width: 100%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
 }
-.header__inner img{
-    width: 80px;
-    height: 100px;
-    margin: auto;
 
-}
-.header__inner p {
-    font-weight: 300;
-    font-size: 1.5em;
-    margin: 0px;
-    color: #000000;
+.header img{
+    margin: 15px;
+    width: 60px;
+    height: 80px;
+
 }
 
 #hamburger{
@@ -58,17 +53,13 @@ body, html{
 }
 .nav {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -15px;
-
 }
 
 .nav__list {
     width: 100%;
     padding: 0;
-    margin: 0;
-    text-align: center;
+    margin-top: 20px;
+    text-align: right;
 }
 
 .nav__item {
@@ -77,13 +68,13 @@ body, html{
     width: 24%;
     text-align: center;
     line-height: 24px;
-    padding: 24px 24px 10px 24px;
+    padding: 40px 10px 10px 10px;
     text-transform: uppercase;
 }
 
 .nav a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 18px;
     padding-top: 11px;
     padding-bottom: 11px;
@@ -98,16 +89,17 @@ body, html{
  * Jumbotron
  */
  .hero{
+    margin-top: 9px;
     min-height: 400px;
     background-repeat: no-repeat;
     width: 100%;
     text-align: center;
-    background-image: url("../images/heros/hero-image_2.jpg");
-    opacity: 0.9;
-    background-size: 100% 100%;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+    background-image: url("../images/heros/heros-transparent-2.jpeg");
     background-position: center;
-    background-color: rgb(153, 153, 153);
+    background-size: 100% 100%;
  }
+
  .hero__inner {
 
     max-width: 100%;
@@ -115,15 +107,15 @@ body, html{
 
 .hero__title {
     padding-top: 150px;
-    color: #fff;
+    color: rgb(252, 252, 252);
     font-weight: 500;
-    font-size: 36px;
+    font-size: 40px;
 }
 
 .hero__tagline {
-    color: #fff;
+    color: rgb(255, 255, 255);
     margin-top: 16px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 300;
 }
 
@@ -132,10 +124,10 @@ body, html{
     width: 100%;
     margin: 60px auto;
     text-align: center;
-    font-family: 'Antonio', sans-serif;
 }
 
 .catalouge__label {
+    text-align: center;
     font-size: 32px;
     font-weight: lighter;
 }
@@ -151,14 +143,14 @@ body, html{
 .posts {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 10px;
 }
 
 /* post item */
 
 .post-item {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-rows: 0fr 1fr;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     overflow: hidden;
@@ -183,7 +175,6 @@ body, html{
 .post-item__title {
     font-weight: 500;
     font-size: 18px;
-    margin-top: 0px;
     transition: 0.3s opacity;
 }
 
@@ -203,9 +194,58 @@ body, html{
     font-size: 13px;
     line-height: 1.5em;
 }
+.detail__label{
+    margin: 15px 0 0 30px;
+    font-weight: 500;
+}
+.detail-title{
+    text-align: left;
+}
+
+.detail-card{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.detail-image{
+    border-radius: 10px;
+    width: 100%;
+}
+.detail__info{
+    padding: 20px;
+}
+.posts-detail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.detail__menu__label{
+    margin-top: 40px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.card-menu{
+    width: 85%;
+    margin: 60px auto;
+}
+
+.food-list .drink-list{
+    text-align: left;
+}
+.menu-item__title{
+    text-align: center;
+    padding: 20px;
+}
 
 footer {
-    background-color: #5E879D;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
     padding: 2em;
     width: 100%;
     text-align: center;
@@ -225,19 +265,38 @@ footer li {
 footer a {
     font-size: 25px;
     text-decoration: none;
-    color: #fff;
+    color: rgb(5, 5, 5);
     padding: 7px 3px 7px 3px;
 }
 
 .copyright{
     margin-top: 15px;
     font-size: 10px;
-    color: #fff;
+    color: rgb(5, 5, 5);
 }
 
+/*
+   Like
+*/
+.like {
+    font-size: 18px;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    background-color: #db0000;
+    color: white;
+    border: 0;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-@media screen and (min-width:0px) and (max-width: 520px){
-    .posts{
+@media screen and (min-width:0px) and (max-width: 540px){
+    .posts, .posts-detail{
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -246,16 +305,22 @@ footer a {
         font-size: 11.5px;
     }
 
+    .header__inner{
+        position: relative;
+        left: 50px;
+        top: 10px;
+    }
+
     #drawer {
-        width: 320px;
+        width: 200px;
         height: 100%;
         position: absolute;
-        margin-top: -1px;
+        margin-top: 110px;
         /* menyembunyikan #drawer -250px (sesuai dengan ukuran lebar drawer) ke kiri */
         transform: translate(-320px, 0);
         transition: transform 0.3s ease-in-out;
-        background-color: #5E879D;
-        border-radius: 0 5% 5% 0;
+        background-color: white;
+        /* border-radius: 0 5% 5% 0; */
         z-index: 1;
     }
     #drawer.open {
@@ -275,6 +340,7 @@ footer a {
         
     }
     #drawer a {
+        margin: auto;
         text-decoration: none;
         font-size: 18px;
         color: black;
@@ -282,22 +348,35 @@ footer a {
     #hamburger {
         display: unset;
         position: relative;
-        top: -45px;
+        top: -70px;
         font-size: 35px;
         text-decoration: none;
         padding-left: 7px;
         padding-right: 7px;
-        color: white;
+        color: black;
         background-color: transparent;
         border: none;
+        z-index: 1;
     }
     .hero{
         margin-top: -47px;
     }
+
+    .detail-card{
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 0fr 1fr;
+    }
+    .detail-text{
+        text-align: center  ;
+    }
+
+
+
     
     
 }
-@media screen and (min-width: 521px) and (max-width: 844px) {
+@media screen and (min-width: 540px) and (max-width: 844px) {
 
     .posts{
         display: grid;
@@ -306,5 +385,22 @@ footer a {
 
     .post-item__description{
         font-size: 12px;
+    }
+    .nav__item{
+        margin-top: 50px;
+        margin-left: 0;
+        padding: 0;
+    }
+    .nav a{
+        font-size: 15px;
+    }
+
+    .detail-card{
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 0fr 1fr;
+    }
+    .detail-text{
+        text-align: center  ;
     }
 }
